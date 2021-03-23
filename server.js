@@ -12,9 +12,8 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://root:kLNmvf9TNsdtZEx@cluster0.mhkwd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
   useFindAndModify: false
 });
 
